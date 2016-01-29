@@ -1,4 +1,4 @@
-OPTIONS=-std=c++11 -g -Wfatal-errors
+OPTIONS=-std=c++11 -O3 -Wfatal-errors
 
 tests: tests.o json.o
 	c++ $(OPTIONS) -o tests tests.o json.o
