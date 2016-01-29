@@ -1,10 +1,13 @@
 OPTIONS=-std=c++11 -g -Wfatal-errors
 
-tests: tests.o
-	c++ $(OPTIONS) -o tests tests.o json-parser.o
+tests: tests.o json.o
+	c++ $(OPTIONS) -o tests tests.o json.o
 
-tests.o: tests.cpp json-parser.hpp json-parser.cpp
-	c++ $(OPTIONS) -c tests.cpp json-parser.cpp
+tests.o: tests.cpp json.o
+	c++ $(OPTIONS) -c tests.cpp
+
+json.o: json.hpp json.cpp
+	c++ $(OPTIONS) -c json.cpp
 
 clean:
 	rm tests *.o
