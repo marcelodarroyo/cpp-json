@@ -5,7 +5,7 @@
 #ifndef JSON_PARSER_H
 #define JSON_PARSER_H
 
-// #include <memory>
+#include <memory>
 #include <map>
 #include <vector>
 #include <string>

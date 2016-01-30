@@ -3,7 +3,8 @@
 #include <string>
 #include <iostream>
 #include <cctype>
-#include "json-parser.hpp"
+#include "json.hpp"
+
 // comment when debugged
 // #define NDEBUG
 #include <cassert>
